@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Cafe</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script defer src="client/app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5">Build Your Hamburger</h1>
+    <div class="card mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Choose Size</h5>
+        <button class="btn btn-primary" onclick="selectSize('small')">Small</button>
+        <button class="btn btn-primary" onclick="selectSize('large')">Large</button>
+      </div>
+    </div>
+    <div class="card mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Choose Stuffing</h5>
+        <button class="btn btn-primary" onclick="selectStuffing('cheese')">Cheese</button>
+        <button class="btn btn-primary" onclick="selectStuffing('salad')">Salad</button>
+        <button class="btn btn-primary" onclick="selectStuffing('potato')">Potato</button>
+      </div>
+    </div>
+    <div class="card mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Choose Toppings</h5>
+        <button class="btn btn-primary" onclick="addTopping('mayo')">Mayo</button>
+        <button class="btn btn-primary" onclick="addTopping('sauce')">Sauce</button>
+      </div>
+    </div>
+    <div class="card mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Your Order</h5>
+        <p id="orderDetails"></p>
+        <button class="btn btn-success" onclick="placeOrder()">Order</button>
+      </div>
+    </div>
+  </div>
+  <script src="client/classes.js"></script>
+</body>
+</html>
